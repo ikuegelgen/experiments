@@ -1,5 +1,6 @@
 {
   "name": "ops-iframe-test",
+  "homepage": "https://ikuegelgen.github.io/experiments/ops-iframe-test/build",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
