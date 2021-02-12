@@ -1387,10 +1387,10 @@
   resolved "https://registry.yarnpkg.com/@csstools/normalize.css/-/normalize.css-10.1.0.tgz#f0950bba18819512d42f7197e56c518aa491cf18"
   integrity sha512-ij4wRiunFfaJxjB0BdrYHIH8FxBJpOwNPhhAcunlmPdXudL1WQV1qoP9un6JsEBAgQH+7UXyyjh0g7jTxXK6tg==
 
-"@deliveryhero/opsportal@^2.0.0":
-  version "2.0.0"
-  resolved "https://npm.pkg.github.com/download/@deliveryhero/opsportal/2.0.0/243e8e4f40255abf512f1dbf8711566d33d1cd67bd5333a164243e59fe99f816#fe8239a0ca7558907c284db4017f78fa91d53d64"
-  integrity sha512-DZIwCMN/m9o0SG+Dg0pwKITu/tRz162vGqQvTnmn44FYDR5usRkS7vyy4DKMuKmS0iergbMh5IMh0De+WzrVNQ==
+"@deliveryhero/opsportal@2.1.0-gtm-dev":
+  version "2.1.0-gtm-dev"
+  resolved "https://npm.pkg.github.com/download/@deliveryhero/opsportal/2.1.0-gtm-dev/9dab700fa79145c7814d321d3eed7b8a0334c5c3a7618886c32d09d3acefdae0#a2eeaa6a69c7fab25f4662c313318cfd0223e2cd"
+  integrity sha512-hZzhh8SAAcQiwXr4RdjcVV9fZbbbvDazuHFWp2aiCYrcuOy34jBsNlR7CWrWwfeKJLbqG1Nb+ytXHIiZvublcQ==
   dependencies:
     "@material-ui/core" "4.9.9"
     "@types/gapi.auth2" "^0.0.52"
