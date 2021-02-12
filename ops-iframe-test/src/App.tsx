@@ -20,15 +20,44 @@ function App() {
 
   const getToken = () => {
       console.log("GET TOKEN")
-      //@ts-ignore
-      sdk?.getAccessToken().then(r => setResult(r))
+      console.log(sdk)
+      if (sdk) {
+          //@ts-ignore
+          sdk.getAccessToken().then(r => {
+              console.log(r)
+              setResult(r)
+          })
+      }
   };
+
+    const pushGtmDataLayer = () => {
+        const dataLayer = {foo: "bar"};
+        if (sdk) {
+            //@ts-ignore
+            sdk.pushGtmDataLayer(dataLayer).then(() => {
+                setResult(JSON.stringify(dataLayer))
+            })
+        }
+    };
+
+    const pushGtmDataLayerCustom = () => {
+        const dataLayer = {foo: "another"};
+        const layerName = "IframeLayer";
+        if (sdk) {
+            //@ts-ignore
+            sdk.pushGtmDataLayer(dataLayer, layerName).then(() => {
+                setResult(layerName + ": " + JSON.stringify(dataLayer))
+            })
+        }
+    };
 
   return (
     <div className="App">
       <h1>Ops Iframe experiments</h1>
       <p><a className="action-link" onClick={getToken}>getAccessToken()</a></p>
-      <textarea style={{width: 300, height: 300}}>{result}</textarea>
+      <p><a className="action-link" onClick={pushGtmDataLayer}>pushGtmDataLayer()</a></p>
+      <p><a className="action-link" onClick={pushGtmDataLayerCustom}>pushGtmDataLayer() with custom layername</a></p>
+      <textarea style={{width: 300, height: 300}} value={result} />
     </div>
   );
 }
