@@ -19,8 +19,6 @@ function App() {
   }, []);
 
   const getToken = () => {
-      console.log("GET TOKEN")
-      console.log(sdk)
       if (sdk) {
           //@ts-ignore
           sdk.getAccessToken().then(r => {
